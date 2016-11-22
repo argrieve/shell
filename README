@@ -1,0 +1,30 @@
+Description
+-----------
+This is a basic UNIX shell project from an undergraduate operating systems
+course. It supports several built-in commands (listed below), and uses the
+typical fork and wait approach for other commands. It also supports executing
+child processes in the background using an ampersand (&) and redirecting output
+from stdout to a file using the greater than (>) symbol.
+
+The built-in commands are:
+  help - prints the help message
+  exit - the shell terminates
+  pid  - the shell prints its process ID
+  ppid - the shell prints its parent's process ID
+  pwd  - print the current working directory
+  cd <dir>  - change the working directory to <dir>
+  get <var> - prints the value of the environment variable <var>
+  set <var> <value> - set environment variable <var> to <value>
+
+The shell prompt can be changed using the '-p' switch, followed by a new value
+to use as the prompt. Additionally, the '-h' switch will display the help 
+message.
+
+The shell does minimal input validation - use at your own risk.
+
+Build Instructions
+------------------
+The provided makefile should be sufficient: 'make clean && make'
+
+Alternatively, enter: 'gcc -o shell *.c'
+
